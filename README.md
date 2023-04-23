@@ -1,7 +1,7 @@
 # MarinaHacks 3.0
 Official submission for MarinaHacks 3.0 at CSULB
 
-Used Tech
+Used Technology
 - React
 - Node
 - Flask
