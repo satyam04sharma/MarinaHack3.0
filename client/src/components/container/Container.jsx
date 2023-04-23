@@ -92,7 +92,7 @@ class Container extends React.Component {
     this.setState({ loader: true }); // start the loader
     try {
       try {
-        const response = await axios.post('https://43a3-35-232-253-141.ngrok-free.app/api/process_image', formData, {
+        const response = await axios.post('https://916c-34-87-172-110.ngrok-free.app/api/process_image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Accept': 'multipart/form-data'
@@ -115,7 +115,7 @@ class Container extends React.Component {
       console.error(error);
     }
   }
-  downloadImage1(){
+  downloadImage(){
     this.setState({
       download:false
     })
@@ -123,32 +123,29 @@ class Container extends React.Component {
     const image_l = '1KEDIQ4ojD_dlPCUn9XXICYLMzcsgYXHN'
     link.href =  "https://drive.google.com/uc?export=view&id="+image_l;
     link.download = 'example.png';
+    link.target ="_blank"
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
-  downloadImage(){
+  downloadImage1(){
     function addOverlay() {
+      const canvas = document.querySelector('canvas')
+      const ctx = canvas.getContext('2d');
       var img = new Image();
       img.onload = function() {
           ctx.drawImage(img, 0, 0);
 
       // Get the canvas data URI
-      var dataURI = canvas.toDataURL();
-      console.log(dataURI);
+      
+      // var dataURI = canvas.toDataURL();
+      // console.log(dataURI);
       };
       const image_l = '1KEDIQ4ojD_dlPCUn9XXICYLMzcsgYXHN'
-      href =  "https://drive.google.com/uc?export=view&id="+image_l;
+      const href =  "https://drive.google.com/uc?export=view&id="+image_l;
       img.src = href;
     }
-    
-    const link = document.createElement('a');
-    const image_l = '1KEDIQ4ojD_dlPCUn9XXICYLMzcsgYXHN'
-    link.href =  "https://drive.google.com/uc?export=view&id="+image_l;
-    link.download = 'example.png';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    addOverlay();
     this.setState({
       download:false
     })
@@ -240,6 +237,14 @@ class Container extends React.Component {
             img={this.state.imgFile}
           ></Board>
         </div>
+        {/* {showChat ?<div className="container1">
+          <button onClick={handleClick}>show image</button>
+          {showImage && (
+            <div className="image-container">
+              <img src="https://drive.google.com/uc?export=view&id=1KEDIQ4ojD_dlPCUn9XXICYLMzcsgYXHN" alt="example" />
+            </div>
+          )}
+        </div>:null} */}
       </div>
     );
   }

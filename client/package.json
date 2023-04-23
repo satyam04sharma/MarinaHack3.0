@@ -20,7 +20,7 @@
     "socket.io-client": "^4.1.3",
     "web-vitals": "^1.0.1"
   },
-  "proxy":"https://43a3-35-232-253-141.ngrok-free.app",
+  "proxy":"https://916c-34-87-172-110.ngrok-free.app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

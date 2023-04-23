@@ -16,7 +16,6 @@ function App() {
   const [room, setRoom] = useState(uniqueId);
   const [showChat, setShowChat] = useState(false);
   const [roomBool, setRoomBool] = useState(true);
-
   const joinRoom = () => {
     if (username !== "" && room !== "") {
       const joinData = { room, username };
@@ -41,7 +40,7 @@ function App() {
     <>
       <div className="App">
         <div className="nav">
-          <h2>Marina Art</h2>
+          <h2>aimagine</h2>
         </div>
         <div className="boxes">
           {!showChat ? (
