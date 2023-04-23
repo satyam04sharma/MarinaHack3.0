@@ -43,7 +43,7 @@ body {
 .box1 {
   display: flex;
   flex-direction: column;
-  background: #12243ceb;
+  background: #38b2e8eb;
   padding: 0px 30px 30px 30px;
   border-radius: 20px;
   /* text-align: center; */
@@ -51,7 +51,7 @@ body {
 .box2 {
   display: flex;
   flex-direction: column;
-  background: #12243ceb;
+  background: #38b2e8eb;
   padding: 0px 30px 30px 30px;
   border-radius: 20px;
 }
@@ -59,7 +59,7 @@ body {
 .boxes {
   width: 100%;
   height: 100%;
-  background-color: #1214189e;
+  background-color: #1214180a;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -96,8 +96,8 @@ body {
   border-radius: 5px;
   padding: 5px;
   font-size: 16px;
-  background: #152b7e;
-  color: #fff;
+  background: #cfd8fe;
+  color: #272323;
   cursor: pointer;
 }
 .roomcode p {
@@ -113,7 +113,7 @@ body {
   cursor: pointer;
 }
 .joinChatContainer button:hover {
-  background: #2e7d32;
+  background: #d7bdf0;
 }
 
 .chat-window {
@@ -385,8 +385,8 @@ p {
 
 .roomcode button {
   width: 85px;
-  background-color: #2e7d32;
-  color: #c7c7c7;
+  background-color: #d7bdf0;
+  color: #141212;
   height: 40px;
 }
  .btn {

@@ -82,6 +82,7 @@ class Board extends React.Component {
     ctx.lineWidth = this.props.size;
     ctx.lineJoin = "round";
     ctx.lineCap = "round";
+    ctx.fillStyle = 'white';
     ctx.strokeStyle = this.props.color;
 
     canvas.addEventListener(
